@@ -1,0 +1,18 @@
+.upload-con {
+  text-align: center;
+
+  background-image: url("https://chart-studio.plotly.com/static/webapp/images/square-banner.5d22f232934f.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+  padding: 80px 80px;
+  max-width: 100%;
+  margin: 40px;
+  min-height: 300px;
+}
+
+.upload-con h2 {
+  background-color: #fff;
+  border-radius: 6px;
+}

@@ -1,0 +1,39 @@
+.login-bg {
+  min-height: 85vh;
+  width: 100vw;
+  background-image: url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.login-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-right: 490px;
+  /* margin-left: 450px; */
+  /* background-color: rgb(129, 137, 141); */
+}
+
+.login-content h2{
+    color: rgb(195, 11, 26);
+}
+
+.login-content .register-section{
+   color: rgb(193, 220, 235);
+}
+/* 
+.login-content button{
+    background-color: black;
+} */

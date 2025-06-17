@@ -1,0 +1,25 @@
+.files-info {
+  text-align: center;
+  background-image: url("https://chart-studio.plotly.com/static/webapp/images/square-banner.5d22f232934f.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+  padding: 80px 80px;
+  max-width: 100%;
+  margin: 40px;
+  min-height: 300px;
+
+}
+
+.files-info h2{
+    color: white;
+}
+.files-info .head{
+  color: rgb(8, 8, 8);
+    text-decoration:underline;
+
+}
+.files-info b{
+  color: rgb(243, 246, 244);
+}

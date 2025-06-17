@@ -1,0 +1,29 @@
+.chart-info {
+  text-align: center;
+  background-image: url("https://chart-studio.plotly.com/static/webapp/images/square-banner.5d22f232934f.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+  padding: 80px 80px;
+  max-width: 100%;
+  margin: 40px;
+  min-height: 300px;
+}
+
+.chart-info h2{
+    color: white;
+}
+.chart-info label b{
+    color: rgb(221, 91, 106);
+}
+
+.chart-info .label-data label{
+  color: green;
+}
+
+.chart-info .chart-img{
+   background-color: #fff;
+   text-align: center;
+   border-radius: 5px;
+}

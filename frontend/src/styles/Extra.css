@@ -1,0 +1,92 @@
+.extra-container {
+  margin: 20px;
+  padding: 24px;
+}
+
+.extra-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.chart-card {
+  background-image: url("https://chart-studio.plotly.com/static/webapp/images/square-banner.5d22f232934f.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 610px;
+}
+
+/* Headings inside cards */
+.chart-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Responsive image */
+.chart-card img {
+   width: 860px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Description box */
+.chart-card p {
+  color: #0b0b0b;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: rgb(237, 237, 241);
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 5px;
+}
+
+/* Responsive tweaks for small screens */
+@media screen and (max-width: 768px) {
+  .chart-card {
+    padding: 15px;
+    height: 500px;
+  }
+
+  .extra-title {
+    font-size: 1.5rem;
+  }
+
+  .chart-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .chart-card p {
+    font-size: 0.95rem;
+  }
+
+  .chart-card img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .extra-container {
+    padding: 16px;
+  }
+
+  .chart-card {
+    padding: 12px;
+  }
+
+  .chart-card p {
+    font-size: 0.9rem;
+  }
+}

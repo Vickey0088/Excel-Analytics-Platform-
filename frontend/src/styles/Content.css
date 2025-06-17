@@ -1,0 +1,116 @@
+.content-container {
+  margin: 35px;
+  text-align: center;
+}
+
+.content-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 30px);
+  min-width: 210px;
+  background-color: #f1e7e7;
+  border-radius: 12px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.card:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 12px 0 8px;
+  color: #111;
+  padding: 0 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #70727c;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #0067c5;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.footer-grid {
+  width: 1417px;
+  padding: 20px;
+  background-color: #4f505c;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  
+}
+
+.footer-grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer-grid ul li {
+  background-color: #e3e3e3;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.footer-grid ul li:hover {
+  background-color: #d0d0d0;
+}
+
+/* Responsive tweak for mobile */
+@media screen and (max-width: 780px) {
+  .footer-grid ul li {
+    width: 400px;
+    text-align: center;
+  }
+
+  .footer-grid{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .footer-grid{
+    width: 670px;
+  }
+}
