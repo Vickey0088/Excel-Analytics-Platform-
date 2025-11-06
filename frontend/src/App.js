@@ -7,7 +7,6 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import PrivateRoute from "./components/PrivateRoute";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -28,7 +27,8 @@ function AppContent({ user, setUser }) {
   // Redirect to home page on refresh if logged in
   useEffect(() => {
     const token = localStorage.getItem("token");
-    const isFirstLoad = performance.getEntriesByType("navigation")[0]?.type === "reload";
+    const isFirstLoad =
+      performance.getEntriesByType("navigation")[0]?.type === "reload";
     if (token && isFirstLoad && location.pathname !== "/") {
       navigate("/", { replace: true });
     }
@@ -39,54 +39,12 @@ function AppContent({ user, setUser }) {
       <Navbar user={user} setUser={setUser} />
       <div className="container">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <PrivateRoute>
-                <About />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/upload"
-            element={
-              <PrivateRoute>
-                <Upload />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/files"
-            element={
-              <PrivateRoute>
-                <Files />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/charts"
-            element={
-              <PrivateRoute>
-                <Charts />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/footerpage"
-            element={
-              <PrivateRoute>
-                <FooterPage />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/files" element={<Files />} />
+          <Route path="/charts" element={<Charts />} />
+          <Route path="/footerpage" element={<FooterPage />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
           <Route path="/register" element={<Register setUser={setUser} />} />
           <Route path="*" element={<Navigate to="/" />} />
